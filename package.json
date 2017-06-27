@@ -3,14 +3,17 @@
   "version": "0.0.0",
   "description": "Calculate fibonacci concurrently",
   "main": "index.js",
-  "scripts": {
-    "test": "./index.js"
+  "bin": {
+    "fib": "index.js",
+    "fibonacci": "index.js",
+    "concurrent-fibonacci": "index.js"
   },
   "devDependencies": {
     "standard": "10.0.2"
   },
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "scripts": {
+    "fib": "./index.js",
     "remake-package-json": "node sh/remake-package-json",
     "clean": "bash 'sh/clean.sh'",
     "fix": "bash 'sh/fix.sh'",

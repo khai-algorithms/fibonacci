@@ -8,6 +8,12 @@
     "fibonacci": "index.js",
     "concurrent-fibonacci": "index.js"
   },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "dependencies": {
+    "x-iterable-base": "^4.0.0"
+  },
   "devDependencies": {
     "standard": "10.0.2"
   },

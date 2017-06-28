@@ -1,4 +1,5 @@
 'use strict'
+const {Yield} = require('x-iterable-base').XIterable
 
 function main (fibonacci) {
   const {argv: {begin, end}} = require('yargs')
@@ -39,7 +40,7 @@ function main (fibonacci) {
   validate(zz, 'end', aa, 'begin')
 
   console.log(`Fibonacci[${aa}:${zz}] =`, new Map(
-    Array.from(fibonacci(zz))
+    new Yield(fibonacci(zz))
       .filter(x => x.index >= aa)
       .map(([x, i]) => [i, x])
   ))

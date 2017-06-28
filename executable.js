@@ -38,7 +38,7 @@ function main (fibonacci) {
   validate(zz, 'end')
   validate(zz, 'end', aa, 'begin')
 
-  console.log(`Fibonacci[${aa}..${zz}] =`, new Map(
+  console.log(`Fibonacci[${aa}:${zz}] =`, new Map(
     Array.from(fibonacci(zz))
       .filter(x => x.index >= aa)
       .map(([x, i]) => [i, x])

@@ -5,7 +5,7 @@ function * fibonacci (n = MAX) {
   const mkval = (value, index) =>
     ({value, index, __proto__: [value, index]})
 
-  let [x, y] = [1, 1]
+  let [x, y] = [0, 1]
 
   for (let i = 0; i !== n; ++i) {
     yield mkval(x, i)

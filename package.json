@@ -12,6 +12,7 @@
     "node": ">= 6.0.0"
   },
   "dependencies": {
+    "yargs": "^8.0.1",
     "x-iterable-base": "^4.0.0"
   },
   "devDependencies": {

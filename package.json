@@ -1,12 +1,11 @@
 {
-  "name": "concurrent-fibonacci",
+  "name": "fibonacci",
   "version": "0.0.0",
-  "description": "Calculate fibonacci concurrently",
+  "description": "Simple fibonacci algorithm",
   "main": "index.js",
   "bin": {
     "fib": "index.js",
-    "fibonacci": "index.js",
-    "concurrent-fibonacci": "index.js"
+    "fibonacci": "index.js"
   },
   "engines": {
     "node": ">= 6.0.0"
